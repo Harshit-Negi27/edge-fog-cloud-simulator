@@ -1,0 +1,3 @@
+Configuration,Avg_Latency_ms,Edge_Util_%,Fog_Util_%,Cloud_Util_%
+"Baseline (4 CPU, 8GB RAM, 10ms Edge)",80.0,68.75,75.0,56.25
+"Upgraded Edge (8 CPU, 16GB RAM, 5ms Edge)",75.42,59.38,62.5,56.25

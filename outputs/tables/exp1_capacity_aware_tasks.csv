@@ -1,0 +1,13 @@
+Task_ID,Tenant_ID,CPU_Req,RAM_Req_GB,Latency_Sensitivity,Status,Assigned_Node,VM_ID,Observed_Latency_ms,Rejection_Reason
+TASK-01,tenant_traffic,1.0,2.0,high,RUNNING,Edge Node 1,VM-001,10.0,N/A
+TASK-02,tenant_traffic,1.5,2.0,high,RUNNING,Edge Node 1,VM-002,10.0,N/A
+TASK-03,tenant_traffic,2.0,4.0,medium,RUNNING,Fog Node 1,VM-003,45.0,N/A
+TASK-04,tenant_traffic,4.0,8.0,low,RUNNING,Cloud Data Center,VM-004,150.0,N/A
+TASK-05,tenant_health,0.5,1.0,high,RUNNING,Fog Node 1,VM-005,45.0,N/A
+TASK-06,tenant_health,2.0,4.0,high,RUNNING,Fog Node 1,VM-006,45.0,N/A
+TASK-07,tenant_health,6.0,12.0,medium,RUNNING,Fog Node 1,VM-007,45.0,N/A
+TASK-08,tenant_health,8.0,16.0,low,RUNNING,Cloud Data Center,VM-008,150.0,N/A
+TASK-09,tenant_analytics,2.0,4.0,medium,RUNNING,Cloud Data Center,VM-009,150.0,N/A
+TASK-10,tenant_analytics,4.0,8.0,low,RUNNING,Cloud Data Center,VM-010,150.0,N/A
+TASK-11,tenant_analytics,8.0,16.0,low,RUNNING,Cloud Data Center,VM-011,150.0,N/A
+TASK-12,tenant_analytics,12.0,24.0,low,RUNNING,Cloud Data Center,VM-012,150.0,N/A

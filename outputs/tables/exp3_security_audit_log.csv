@@ -1,0 +1,4 @@
+Timestamp,Requester,Target,Action,Status,Details
+2026-11-02 21:51:29,tenant_traffic,tenant_traffic,VIEW_TASKS,ALLOWED,Access granted under tenant isolation policy.
+2026-11-02 21:51:29,tenant_traffic,tenant_health,VIEW_TASKS,DENIED,SECURITY VIOLATION [403 Forbidden]: Tenant 'tenant_traffic' is denied access to private records of Tenant 'tenant_health'.
+2026-11-02 21:51:29,admin_cluster,admin_cluster,VIEW_TASKS,ALLOWED,Access granted under tenant isolation policy.

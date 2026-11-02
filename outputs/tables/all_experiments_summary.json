@@ -1,0 +1,26 @@
+{
+    "Experiment_1_Policy_Comparison": {
+        "setup": "12 diverse tasks evaluated under Latency-First vs Capacity-Aware policies.",
+        "expected": "Latency-First achieves lower average latency by aggressively placing sensitive tasks on Edge; Capacity-Aware distributes load more evenly across Fog and Cloud.",
+        "actual": "Latency-First avg latency: 80.0 ms vs Capacity-Aware: 91.67 ms. Load balanced across nodes.",
+        "evidence": "C:\\Users\\hnegi\\Desktop\\cdef\\outputs\\charts\\exp1_policy_comparison.png"
+    },
+    "Experiment_2_Overload_Scenario": {
+        "setup": "19 tasks submitted, requesting 130+ CPU cores against a cluster capacity of 84 cores.",
+        "expected": "Edge and Fog saturate first, tasks spill over to Cloud, and remaining tasks are rejected gracefully.",
+        "actual": "13 tasks admitted (68.42%), 6 rejected due to insufficient capacity.",
+        "evidence": "C:\\Users\\hnegi\\Desktop\\cdef\\outputs\\charts\\exp2_overload_analysis.png"
+    },
+    "Experiment_3_Unauthorized_Access": {
+        "setup": "Tenant 'tenant_traffic' logged in and attempted to query tasks belonging to 'tenant_health'.",
+        "expected": "Security gateway denies request with 403 Forbidden and logs security audit trail.",
+        "actual": "Access blocked successfully: True. Error: 'SECURITY VIOLATION [403 Forbidden]: Tenant 'tenant_traffic' is denied access to private records of Tenant 'tenant_health'.'.",
+        "evidence": "C:\\Users\\hnegi\\Desktop\\cdef\\outputs\\tables\\exp3_security_audit_log.csv"
+    },
+    "Experiment_4_Sensitivity_Tuning": {
+        "setup": "Edge node upgraded from 4 CPU / 8GB / 10ms to 8 CPU / 16GB / 5ms.",
+        "expected": "Upgraded Edge accommodates more latency-critical tasks, dropping cluster-wide average latency.",
+        "actual": "Average latency dropped from 80.0 ms to 75.42 ms; Edge VM count increased from 3 to 4.",
+        "evidence": "C:\\Users\\hnegi\\Desktop\\cdef\\outputs\\charts\\exp4_node_scaling_comparison.png"
+    }
+}
