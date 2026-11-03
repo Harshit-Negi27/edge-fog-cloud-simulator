@@ -113,4 +113,4 @@ cdef/
 ## 👥 Team Contribution (For Viva & Rubric Section 6)
 
 - **Harshit Negi:** System architecture design, implementation of simulation engine, placement algorithms, multi-tenant security gateway, Streamlit UI, and automated experiment scripts.
-- **Project Partner:** Project report (5–8 pages), PowerPoint presentation deck (5–7 slides), architectural diagrams, experimental evidence compilation, and evaluation documentation.
+- **Priya Chaurasia:** Project report (5–8 pages), PowerPoint presentation deck (5–7 slides), architectural diagrams, experimental evidence compilation, and evaluation documentation.
